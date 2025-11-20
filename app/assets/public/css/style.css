@@ -1,0 +1,72 @@
+:root{
+  --green: #0fb070;
+  --orange: #f78a2b;
+  --purple: #7a5cff;
+  --dark: #0b2a2a;
+}
+
+/* Reset / base */
+body { font-family: Inter, "Noto Sans Thai", Arial, sans-serif; color:#223; }
+a { text-decoration: none; }
+
+/* NAV */
+.site-header { background: transparent; position: absolute; top:0; left:0; right:0; z-index: 20; }
+.navbar { padding: 1rem 0; }
+.logo-img { height:40px; }
+.brand-text small { font-size: 0.75rem; color: rgba(255,255,255,0.9); }
+
+/* HERO */
+.hero-section {
+  position: relative;
+  min-height: 580px;
+  background-image: url('../img/hero-bg.jpg');
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.hero-overlay {
+  position: absolute;
+  inset:0;
+  background: rgba(18,120,102,0.45);
+}
+.hero-container { position: relative; z-index: 2; padding-top: 60px; padding-bottom:60px; }
+.hero-title { font-size: 48px; font-weight:700; line-height:1.05; text-shadow: 0 2px 8px rgba(0,0,0,0.25); }
+.hero-sub { font-size: 18px; margin-top:10px; color: rgba(255,255,255,0.95); }
+.btn-orange { background: var(--orange); border: none; color: #fff; }
+.btn-orange:hover { opacity: .95; }
+
+/* features section */
+.feature-intro { background: #fff; border-radius: 8px; }
+.feature-card { border: none; border-radius: 12px; }
+.icon-circle { width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:22px; }
+.icon-circle.orange{ background: linear-gradient(45deg,#ff9b52,#ff7a2c); }
+.icon-circle.purple{ background: linear-gradient(45deg,#8b6bff,#6b4cff); }
+.icon-circle.green{ background: linear-gradient(45deg,#2ecf9e,#13b07a); }
+
+/* content sections */
+.illus-box { background: transparent; }
+.bg-light { background: #fbfcfd; }
+
+/* CTA BAR */
+.cta-bar { background: linear-gradient(90deg,#0fb070,#00a57a); color:#fff; }
+.cta-icon { background: rgba(255,255,255,0.18); width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700; }
+
+/* Footer */
+.site-footer { background: #061b1b; color: #cfeee7; }
+
+/* Responsive */
+@media (max-width: 992px) {
+  .hero-title { font-size: 36px; }
+  .hero-sub { font-size: 15px; }
+  .site-header { position: relative; background: rgba(255,255,255,0.02); }
+  .brand-text { display:none; }
+}
+@media (max-width: 576px) {
+  .hero-section { min-height: 420px; padding-top:80px; padding-bottom:40px; }
+  .hero-title { font-size: 26px; text-align:center; }
+  .hero-sub { text-align:center; }
+  .hero-container { text-align:center; }
+  .navbar .btn { padding: .35rem .6rem; }
+}

@@ -14,17 +14,17 @@
   <!-- Custom CSS -->
   <link href="assets/public/css/style.css" rel="stylesheet">
 </head>
+
 <body>
 
   <!-- NAVBAR -->
   <header class="site-header">
     <nav class="navbar navbar-expand-md">
       <div class="container">
+
         <a class="navbar-brand d-flex align-items-center" href="#">
           <img src="assets/public/img/logo.svg" alt="ProMPT" class="me-2 logo-img">
-          <div class="brand-text d-none d-md-block">
-            
-          </div>
+          <div class="brand-text d-none d-md-block"></div>
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
@@ -33,139 +33,187 @@
 
         <div class="collapse navbar-collapse justify-content-end" id="mainNav">
           <ul class="navbar-nav align-items-center">
-            <li class="nav-item ms-3"><a class="btn btn-outline-light btn-sm" href="#">เข้าสู่ระบบ</a></li>
-            <li class="nav-item ms-2"><a class="btn btn-orange btn-sm" href="#">สมัครสมาชิก</a></li>
+            <li class="nav-item ms-3">
+              <a class="btn btn-outline-light btn-sm" href="#">เข้าสู่ระบบ</a>
+            </li>
+            <li class="nav-item ms-2">
+              <a class="btn btn-orange btn-sm" href="#">สมัครสมาชิก</a>
+            </li>
           </ul>
         </div>
+
       </div>
     </nav>
   </header>
 
   <!-- HERO -->
-<section class="hero-section">
+  <section class="hero-section">
 
-  <!-- วางรูปตรงนี้ -->
-  <img src="assets/public/img/hero-bg.svg" alt="hero banner" class="hero-bg">
+    <img src="assets/public/img/hero-bg.svg" alt="hero banner" class="hero-bg">
+    <div class="hero-overlay"></div>
 
-  <  <div class="hero-overlay"></div>
-  <div class="container hero-container">
-    <div class="row align-items-center">
-      <div class="col-lg-7 text-center text-lg-start">
-        <h1 class="hero-title">
-          จัดการโครงการ พัฒนาหลักสูตร<br>ต่อยอดกิจกรรม แบบครบวงจร
-        </h1>
+    <div class="container hero-container d-flex justify-content-center align-items-center text-center" style="height: 100vh;">
+      <div class="row w-100">
+        <div class="col-lg-7 mx-auto">
+          <h1 class="hero-title">
+            จัดการโครงการ พัฒนาหลักสูตร<br>ต่อยอดกิจกรรม แบบครบวงจร
+          </h1>
 
-        <p class="hero-sub lead">
-          ระบบจัดการโครงการการเรียนรู้และส่งเสริมองค์ความรู้สำหรับผู้จัดในภาคการศึกษาและหน่วยงานต่าง ๆ
-        </p>
-
-        <a class="btn btn-lg btn-orange hero-cta" href="#">
-          เริ่มต้นใช้งาน →
-        </a>
+          <a class="btn btn-lg btn-orange hero-cta mt-3" href="#">
+            เริ่มต้นใช้งาน →
+          </a>
+        </div>
       </div>
     </div>
-  </div>
 
-</section>
+  </section>
 
   <!-- FEATURES CARDS -->
   <section class="py-5">
     <div class="container">
       <div class="row align-items-center g-4">
+
         <div class="col-lg-4">
           <div class="feature-intro p-4">
             <img src="assets/public/img/logo.svg" alt="logo" class="mb-3 logo-small">
-            <p class="text-muted">ระบบจัดการโครงการการเรียนรู้และส่งเสริมองค์ความรู้สำหรับผู้สูงวัยในการสนับสนุนกิจกรรมการเรียนรู้ และส่งเสริมการพัฒนาผลิตภัณท์ และภูมิปัญญาสำหรับผู้สูงวัยและเพิ่มช่องทางรายได้ของกลุ่มผู้ประกอบการผลิตภัณท์ หรือบริการที่เข้าร่วม</p>
+            <p class="text-muted">
+              ระบบจัดการโครงการการเรียนรู้และส่งเสริมองค์ความรู้สำหรับผู้สูงวัยในการสนับสนุนกิจกรรมการเรียนรู้ 
+              และส่งเสริมการพัฒนาผลิตภัณท์ และภูมิปัญญาสำหรับผู้สูงวัยและเพิ่มช่องทางรายได้ของกลุ่มผู้ประกอบการผลิตภัณท์ 
+              หรือบริการที่เข้าร่วม
+            </p>
             <a class="btn btn-outline-success btn-sm" href="#">เรียนรู้โครงการ</a>
           </div>
         </div>
 
-        <div class="col-lg-8">
-          <div class="row gx-3">
-            <div class="col-sm-6 col-lg-4 mb-3">
-              <div class="card feature-card p-3 h-100 shadow-sm">
-                <div class="icon-circle orange"><i class="bi bi-folder-fill"></i></div>
-                <h6 class="mt-2">การจัดการโครงการ</h6>
-                <p class="small text-muted">บริหารโครงการ การติดตาม และรายงาน</p>
-              </div>
+        <!-- CARD 1 -->
+        <div class="col-sm-6 col-lg-4 mb-3">
+          <div class="card feature-card p-3 h-100 shadow-sm text-center">
+            <div class="icon-circle orange">
+              <i class="bi bi-easel-fill"></i>
             </div>
-            <div class="col-sm-6 col-lg-4 mb-3">
-              <div class="card feature-card p-3 h-100 shadow-sm">
-                <div class="icon-circle purple"><i class="bi bi-briefcase-fill"></i></div>
-                <h6 class="mt-2">การยื่นโครงการ</h6>
-                <p class="small text-muted">สามารถยื่นโครงการและติดตามสถานะ</p>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-4 mb-3">
-              <div class="card feature-card p-3 h-100 shadow-sm">
-                <div class="icon-circle green"><i class="bi bi-mortarboard-fill"></i></div>
-                <h6 class="mt-2">หลักสูตรการเรียนรู้</h6>
-                <p class="small text-muted">จัดการหลักสูตร และกิจกรรมเชิงปฏิบัติ</p>
-              </div>
-            </div>
+            <h6 class="mt-2">การบริหารโครงการ</h6>
+            <p class="small text-muted">
+              ระบบการบริหารทีมและจัดการโครงการแบบเป็นระบบและครบวงจร
+            </p>
           </div>
         </div>
+
+        <!-- CARD 2 -->
+        <div class="col-sm-6 col-lg-4 mb-3">
+          <div class="card feature-card p-3 h-100 shadow-sm text-center">
+            <div class="icon-circle purple">
+              <i class="bi bi-briefcase-fill"></i>
+            </div>
+            <h6 class="mt-2">การยื่นโครงการ</h6>
+            <p class="small text-muted">
+              สามารถยื่นโครงการเพื่อขอประเมินการรับทุนได้อย่างสะดวกและรวดเร็ว
+            </p>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="col-sm-6 col-lg-4 mb-3">
+          <div class="card feature-card p-3 h-100 shadow-sm text-center">
+            <div class="icon-circle green">
+              <i class="bi bi-mortarboard-fill"></i>
+            </div>
+            <h6 class="mt-2">หลักสูตรการเรียนรู้</h6>
+            <p class="small text-muted">
+              หลักสูตรมากมายเพื่อการจัดการโครงการทั้งแบบออนไลน์และแบบอบรมเชิงปฏิบัติ
+            </p>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- CONTENT SECTIONS -->
+  <!-- CONTENT SECTION 1 -->
   <section class="py-5 bg-light">
     <div class="container">
       <div class="row align-items-center g-4">
+
         <div class="col-md-6">
           <div class="illus-box p-4">
             <img src="assets/public/img/img1.svg" alt="illu" class="img-fluid">
           </div>
         </div>
+
         <div class="col-md-6">
           <h4>การบริหารโครงการ</h4>
-          <p class="text-muted">เครื่องมือช่วยบริหารโครงการแบบรวมศูนย์ สามารถติดตามสถานะและผลการดำเนินงาน</p>
+          <p class="text-muted">
+            จัดระเบียบโครงการด้วยโปรเจคทาสก์และสามารถติดตามการดำเนินงานของโครงการได้อย่างครอบคลุม
+          </p>
+
           <ul class="list-unstyled">
-            <li class="mb-2"><strong class="me-2">•</strong> ระบบโปรเจกต์สากลสำหรับติดตามงาน</li>
-            <li class="mb-2"><strong class="me-2">•</strong> การติดตามโครงการและรายงาน</li>
+            <li class="mb-2"><strong class="me-2">•</strong> ระบบโปรเจคทาสก์</li>
+            <p class="text-muted">กำหนดทาสก์ในการทำงาน ทำให้คุณสามารถติดตามงานได้อย่างครบถ้วน</p>
+
+            <li class="mb-2"><strong class="me-2">•</strong> การติดตามโครงการ</li>
+            <p class="text-muted">สามารถติดตามสถิติของโครงการเพื่อช่วยพัฒนาและแก้ไขงานได้</p>
           </ul>
         </div>
+
       </div>
     </div>
   </section>
 
+  <!-- CONTENT SECTION 2 -->
   <section class="py-5">
     <div class="container">
       <div class="row align-items-center g-4">
+
         <div class="col-md-6 order-md-2">
           <div class="illus-box p-4 text-end">
             <img src="assets/public/img/img2.svg" alt="illu" class="img-fluid">
           </div>
         </div>
+
         <div class="col-md-6 order-md-1">
           <h4>การยื่นข้อเสนอโครงการ</h4>
-          <p class="text-muted">ระบบการรับข้อเสนอและประเมินโครงการอย่างมีประสิทธิภาพ</p>
+          <p class="text-muted">
+            โครงการที่คุณสร้างสามารถยื่นข้อเสนอเพื่อได้รับการประเมินภายในระบบได้
+          </p>
+
           <ul class="list-unstyled">
             <li class="mb-2"><strong class="me-2">•</strong> ระบบประเมินโครงการ</li>
+            <p class="text-muted">ผู้ทรงคุณวุฒิจะทำการประเมินโครงการของคุณ</p>
+
             <li class="mb-2"><strong class="me-2">•</strong> ระบบการรับทุน</li>
+            <p class="text-muted">เมื่อผ่านการประเมิน คุณจะได้รับทุนเพื่อต่อยอดโครงการ</p>
           </ul>
         </div>
+
       </div>
     </div>
   </section>
 
-<section class="py-5 bg-light">
+  <!-- CONTENT SECTION 3 -->
+  <section class="py-5 bg-light">
     <div class="container">
       <div class="row align-items-center g-4">
+
         <div class="col-md-6">
           <div class="illus-box p-4">
             <img src="assets/public/img/img3.svg" alt="illu" class="img-fluid">
           </div>
         </div>
+
         <div class="col-md-6">
           <h4>หลักสูตรการเรียนรู้</h4>
-          <p class="text-muted">หลักสูตรมากมายเพื่อการจัดการโครงการทั้งแบบออนไลน์ และแบบอบรมเชิงปฎิบัติ</p>
+          <p class="text-muted">
+            หลักสูตรทั้งแบบออนไลน์และแบบอบรมเชิงปฏิบัติ
+          </p>
+
           <ul class="list-unstyled">
             <li class="mb-2"><strong class="me-2">•</strong> เรียนรู้ออนไลน์</li>
+            <p class="text-muted">Lorem Ipsum is simply dummy text</p>
+
             <li class="mb-2"><strong class="me-2">•</strong> กิจกรรม workshop</li>
+            <p class="text-muted">Lorem Ipsum is simply dummy text</p>
           </ul>
         </div>
+
       </div>
     </div>
   </section>
@@ -177,9 +225,9 @@
         <div class="cta-icon me-3">▶</div>
         <div>
           <h6 class="mb-0">เริ่มต้นใช้งานระบบไปกับเรา</h6>
-          <small class="text-muted">สร้างบัญชีและเริ่มจัดการโครงการของคุณ</small>
         </div>
       </div>
+
       <a class="btn btn-orange" href="#">เริ่มเข้าสู่ระบบ →</a>
     </div>
   </section>
@@ -188,10 +236,11 @@
   <footer class="site-footer">
     <div class="container py-5">
       <div class="row">
+
         <div class="col-md-4">
-          <img src="assets/public/img/logo.svg" alt="logo" style="max-width:200px">
-          <p class="text-muted small mt-3">© Copyright School of Lifelong Education, Chiang Mai University. All Rights Reserved </p>
+          <img src="assets/public/img/logo.svg" alt="logo" style="max-width: 200px;">
         </div>
+
         <div class="col-md-8">
           <ul class="list-inline text-md-end mt-3 mt-md-0">
             <li class="list-inline-item me-3"><a class="text-muted" href="#">หน้าหลัก</a></li>
@@ -201,7 +250,12 @@
             <li class="list-inline-item me-3"><a class="text-muted" href="#">ติดต่อเรา</a></li>
             <li class="list-inline-item me-3"><a class="text-muted" href="#">สำหรับผู้ดูแลระบบ</a></li>
           </ul>
+
+          <p class="footer-copy text-muted small mt-3">
+            © School of Lifelong Education, Chiang Mai University. All Rights Reserved
+          </p>
         </div>
+
       </div>
     </div>
   </footer>
@@ -210,5 +264,6 @@
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
+
 </body>
 </html>
